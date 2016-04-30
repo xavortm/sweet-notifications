@@ -1,6 +1,6 @@
 <?php
 /**
- * DX Sources
+ * Sweet Notifications
  * 
  * @package     Sweet Notifications
  * @author  	DevriX
@@ -22,10 +22,10 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // The main class for the plugin
-require_once plugin_dir_path( __FILE__ ) . 'inc/SN_Admin.class.php';
+require_once plugin_dir_path( __FILE__ ) . 'inc/sn-admin.class.php';
 
-// Initialize and run the primary DX_Sources class
-function run_dx_sources() {
+// Initialize and run the primary SN_Admin class
+function run_dx_sweet_notifications() {
 
 	if ( is_admin() ) {
 		// Build the metaboxes for the single post view editor.
@@ -34,4 +34,4 @@ function run_dx_sources() {
 }
 
 // This is where the plugin starts working :)
-run_dx_sources();
+run_dx_sweet_notifications();

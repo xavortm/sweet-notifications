@@ -5,8 +5,9 @@ class SN_Admin {
 		$this->add_actions();
 		$this->add_filters();
 	}
-/**
-	 * Set the filters like add the sources after the post.
+	
+	/**
+	 * Set plugin filters
 	 */
 	private function add_filters() {}
 
@@ -29,7 +30,7 @@ class SN_Admin {
 	}
 
 	/**
-	 * The types of styling the user can choose from for the sources listing.
+	 * Enqueue scripts
 	 */
 	public function enqueue_scripts() {
 		wp_enqueue_style( 'sn-notifications', plugins_url( '../assets/css/admin.min.css', __FILE__ ) );
